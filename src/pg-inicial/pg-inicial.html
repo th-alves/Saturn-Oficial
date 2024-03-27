@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Saturn</title>
+    <link rel="icon" type="image/x-icon" href="../assets/saturn-favicon.ico" />
+    <!-- Bootstrap icons-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/mq-telas-menores.css" />
+    <script src="js/scripts.js" defer></script>
+  </head>
+  <body>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-sm navbar-light bg-light sticky-top">
+      <div class="container px-4 py-2 px-lg-5">
+        <a class="navbar-brand" href="#!">
+          <img
+            class="logo"
+            src="../assets/SATURN_PHARM_rx.png"
+            alt="saturn logo"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse nav-links"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#!"
+                >Início</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#!">Sobre nós</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                id="navbarDropdown"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Comprar</a
+              >
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="#!">Todos os produtos</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#!">Itens populares</a></li>
+                <li><a class="dropdown-item" href="#!">Drop novo!</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <!-- Login Form -->
+          <div class="nav-buttons d-flex align-items-center">
+            <button id="openModalBtn" class="openModalBtn">Login</button>
+            <div id="modal" class="modal">
+              <div class="modal-content">
+                <span id="closeModalBtn" class="close-btn">&times;</span>
+                <div class="tabs">
+                  <button id="loginTab" class="tab-btn active">Login</button>
+                  <button id="signupTab" class="tab-btn">Cadastro</button>
+                </div>
+                <div id="loginForm" class="form">
+                  <h2>Login</h2>
+                  <form>
+                    <input
+                      type="text"
+                      placeholder="seuemail@gmail.com"
+                      required
+                    />
+                    <input type="password" placeholder="Sua senha" required />
+                    <div class="form-bottom">
+                      <div class="checkbox">
+                        <input
+                          type="checkbox"
+                          id="rememberMe"
+                          name="rememberMe"
+                        />
+                        <label for="rememberMe">Manter-me conectado</label>
+                      </div>
+                      <a href="#" class="forgot-password-link"
+                        >Esqueci minha senha</a
+                      >
+                    </div>
+                    <button type="submit">Entrar</button>
+                  </form>
+                </div>
+                <div id="signupForm" class="form">
+                  <h2>Cadastro</h2>
+                  <form>
+                    <input
+                      type="text"
+                      placeholder="exemplo@gmail.com"
+                      required
+                    />
+                    <input type="password" placeholder="Senha" required />
+                    <input
+                      type="password"
+                      placeholder="Confirmar Senha"
+                      required
+                    />
+                    <button type="submit">Cadastrar</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+            <!-- Cart button -->
+            <form class="d-flex cart">
+              <button class="btn btn-outline-dark" type="submit">
+                <i class="bi-cart-fill me-1"></i>
+                Carrinho
+                <span class="badge bg-dark text-white ms-1 rounded-pill"
+                  >0</span
+                >
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header-->
+    <header class="bg-dark py-5"></header>
+
+    <!-- Bubbles -->
+    <div class="bolhas-container">
+      <div class="bolha">
+        <img src="../assets/saturn-favicon.ico" alt="icon float" />
+      </div>
+      <div class="bolha">
+        <img src="../assets/saturn-rxx-removebg.png" alt="" />
+      </div>
+      <div class="bolha">
+        <img src="../assets/saturn-favicon.ico" alt="icon float" />
+      </div>
+      <div class="bolha">
+        <img src="../assets/saturn-rxx-removebg.png" alt="" />
+      </div>
+      <div class="bolha">
+        <img src="../assets/saturn-favicon.ico" alt="icon float" />
+      </div>
+      <div class="bolha">
+        <img src="../assets/saturn-rxx-removebg.png" alt="" />
+      </div>
+      <div class="bolha">
+        <img src="../assets/saturn-favicon.ico" alt="icon float" />
+      </div>
+    </div>
+
+    <!-- Section Clothes -->
+    <section class="py-5">
+      <div class="container px-4 px-lg-5 mt-5">
+        <div
+          class="clothes-container row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center"
+        >
+          <div class="col mb-5">
+            <div class="card h-100">
+              <!-- Product image-->
+              <div class="clothes">
+                <img
+                  id="not-hover"
+                  class="card-img-top"
+                  src="assets/roupas/camisetas/st-1.jpg"
+                  alt="..."
+                />
+                <img
+                  class="card-img-top hover"
+                  src="assets/roupas/camisetas/st-2.jpg"
+                  alt="..."
+                />
+              </div>
+              <!-- Product details-->
+              <div class="card-body p-4">
+                <div class="text-center">
+                  <!-- Product name-->
+                  <h5 class="fw-bolder fs-6">Fancy Product</h5>
+                  <!-- Product price-->
+                  <span class="value-clothes">$40.00</span>
+                </div>
+              </div>
+              <!-- Product actions-->
+              <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                <div class="text-center">
+                  <a class="btn btn-outline-dark mt-auto" href="#">Comprar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col mb-5">
+            <div class="card h-100">
+              <!-- Product image-->
+              <div class="clothes">
+                <img
+                  id="not-hover"
+                  class="card-img-top"
+                  src="assets/roupas/camisetas/st-6.jpg"
+                  alt="..."
+                />
+                <img
+                  class="card-img-top hover"
+                  src="assets/roupas/camisetas/st-2.jpg"
+                  alt="..."
+                />
+              </div>
+              <!-- Product details-->
+              <div class="card-body p-4">
+                <div class="text-center">
+                  <!-- Product name-->
+                  <h5 class="fw-bolder fs-6">Fancy Product</h5>
+                  <!-- Product price-->
+                  <span class="value-clothes">$40.00</span>
+                </div>
+              </div>
+              <!-- Product actions-->
+              <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                <div class="text-center">
+                  <a class="btn btn-outline-dark mt-auto" href="#">Comprar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col mb-5">
+            <div class="card h-100">
+              <!-- Product image-->
+              <div class="clothes">
+                <img
+                  id="not-hover"
+                  class="card-img-top"
+                  src="assets/roupas/camisetas/st-3.jpg"
+                  alt="..."
+                />
+                <img
+                  class="card-img-top hover"
+                  src="assets/roupas/camisetas/st-2.jpg"
+                  alt="..."
+                />
+              </div>
+              <!-- Product details-->
+              <div class="card-body p-4">
+                <div class="text-center">
+                  <!-- Product name-->
+                  <h5 class="fw-bolder fs-6">Fancy Product</h5>
+                  <!-- Product price-->
+                  <span class="value-clothes">$40.00</span>
+                </div>
+              </div>
+              <!-- Product actions-->
+              <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                <div class="text-center">
+                  <a class="btn btn-outline-dark mt-auto" href="#">Comprar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col mb-5">
+            <div class="card h-100">
+              <!-- Product image-->
+              <div class="clothes">
+                <img
+                  id="not-hover"
+                  class="card-img-top"
+                  src="assets/roupas/camisetas/st-4.jpg"
+                  alt="..."
+                />
+                <img
+                  class="card-img-top hover"
+                  src="assets/roupas/camisetas/st-2.jpg"
+                  alt="..."
+                />
+              </div>
+              <!-- Product details-->
+              <div class="card-body p-4">
+                <div class="text-center">
+                  <!-- Product name-->
+                  <h5 class="fw-bolder fs-6">Fancy Product</h5>
+                  <!-- Product price-->
+                  <span class="value-clothes">$40.00</span>
+                </div>
+              </div>
+              <!-- Product actions-->
+              <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                <div class="text-center">
+                  <a class="btn btn-outline-dark mt-auto" href="#">Comprar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col mb-5">
+            <div class="card h-100">
+              <!-- Product image-->
+              <div class="clothes">
+                <img
+                  id="not-hover"
+                  class="card-img-top"
+                  src="assets/roupas/camisetas/st-5.jpg"
+                  alt="..."
+                />
+                <img
+                  class="card-img-top hover"
+                  src="assets/roupas/camisetas/st-2.jpg"
+                  alt="..."
+                />
+              </div>
+              <!-- Product details-->
+              <div class="card-body p-4">
+                <div class="text-center">
+                  <!-- Product name-->
+                  <h5 class="fw-bolder fs-6">Fancy Product</h5>
+                  <!-- Product price-->
+                  <span class="value-clothes">$40.00</span>
+                </div>
+              </div>
+              <!-- Product actions-->
+              <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                <div class="text-center">
+                  <a class="btn btn-outline-dark mt-auto" href="#">Comprar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col mb-5">
+            <div class="card h-100">
+              <!-- Product image-->
+              <div class="clothes">
+                <img
+                  id="not-hover"
+                  class="card-img-top"
+                  src="assets/roupas/camisetas/st-4.jpg"
+                  alt="..."
+                />
+                <img
+                  class="card-img-top hover"
+                  src="assets/roupas/camisetas/st-2.jpg"
+                  alt="..."
+                />
+              </div>
+              <!-- Product details-->
+              <div class="card-body p-4">
+                <div class="text-center">
+                  <!-- Product name-->
+                  <h5 class="fw-bolder fs-6">Fancy Product</h5>
+                  <!-- Product price-->
+                  <span class="value-clothes">$40.00</span>
+                </div>
+              </div>
+              <!-- Product actions-->
+              <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                <div class="text-center">
+                  <a class="btn btn-outline-dark mt-auto" href="#">Comprar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col mb-5">
+            <div class="card h-100">
+              <!-- Product image-->
+              <div class="clothes">
+                <img
+                  id="not-hover"
+                  class="card-img-top"
+                  src="assets/roupas/toucas/touca-black-extenso.jpg"
+                  alt="..."
+                />
+              </div>
+              <!-- Product details-->
+              <div class="card-body p-4">
+                <div class="text-center">
+                  <!-- Product name-->
+                  <h5 class="fw-bolder fs-6">Fancy Product</h5>
+                  <!-- Product price-->
+                  <span class="value-clothes">$40.00</span>
+                </div>
+              </div>
+              <!-- Product actions-->
+              <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                <div class="text-center">
+                  <a class="btn btn-outline-dark mt-auto" href="#">Comprar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col mb-5">
+            <div class="card h-100">
+              <!-- Product image-->
+              <div class="clothes">
+                <img
+                  id="not-hover"
+                  class="card-img-top"
+                  src="assets/roupas/toucas/touca-black-S.jpg"
+                  alt="..."
+                />
+              </div>
+              <!-- Product details-->
+              <div class="card-body p-4">
+                <div class="text-center">
+                  <!-- Product name-->
+                  <h5 class="fw-bolder fs-6">Fancy Product</h5>
+                  <!-- Product price-->
+                  <span class="value-clothes">$40.00</span>
+                </div>
+              </div>
+              <!-- Product actions-->
+              <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                <div class="text-center">
+                  <a class="btn btn-outline-dark mt-auto" href="#">Comprar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer-->
+    <footer class="text-center d-flex justify-content-around">
+      <div class="left-side">
+        <img
+          class="logo"
+          src="../assets/SATURN_PHARM_rx.png"
+          alt="saturn logo"
+        />
+
+        <div class="left-side-links d-flex flex-column mt-4">
+          <a href="#">Início</a>
+          <a href="#">Sobre nós</a>
+        </div>
+      </div>
+
+      <div class="middle">
+        <h4>Fique por dentro dos próximos drops!</h4>
+        <form action="#" method="get" class="d-flex flex-column gap-3">
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="Seu nome"
+          />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="seuemail@gmail.com"
+          />
+
+          <button type="submit">Receber as novidades</button>
+        </form>
+      </div>
+
+      <div class="right-side">
+        <div class="terms d-flex flex-column gap-2">
+          <h5>Termos</h5>
+          <a href="#">Política de Privacidade</a>
+          <a href="#">Termos de Política</a>
+        </div>
+
+        <div class="social-media mt-4">
+          <div class="medias">
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-twitter"></i>
+          </div>
+          <a href="#">By Thgx$</a>
+        </div>
+      </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
